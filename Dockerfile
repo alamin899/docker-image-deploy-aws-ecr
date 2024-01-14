@@ -18,3 +18,6 @@ EXPOSE 3000
 
 # Define the command to run your application
 CMD ["node", "app.js"]
+
+# Remove unnecessary files to reduce image size
+RUN rm -rf node_modules
